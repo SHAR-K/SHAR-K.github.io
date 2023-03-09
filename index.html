@@ -4,423 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <!-- 以上内容为HTML自动生成 -->
+
+    <!-- 连接css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="topstyle.css">
+    <link rel="stylesheet" href="card.css">
+
+    <!-- 连接图标库 -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+    <!-- 调用js，jQuery -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js.js"></script>
+
+    <!-- 网页头顶标签的标题 -->
+    <title>个人博客</title>
 </head>
+
+
 <body>
-    <div class="center">
-        <div class="outer circle"></div>
-        <div class="outer o1">
-                <span style="--i:1"></span>
-                <span style="--i:2"></span>
-                <span style="--i:3"></span>
-                <span style="--i:4"></span>
-                <span style="--i:5"></span>
-                <span style="--i:6"></span>
-                <span style="--i:7"></span>
-                <span style="--i:8"></span>
-                <span style="--i:9"></span>
-                <span style="--i:10"></span>
-                <span style="--i:11"></span>
-                <span style="--i:12"></span>
-                <span style="--i:13"></span>
-                <span style="--i:14"></span>
-                <span style="--i:15"></span>
-                <span style="--i:16"></span>
-                <span style="--i:17"></span>
-                <span style="--i:18"></span>
-                <span style="--i:19"></span>
-                <span style="--i:20"></span>
-                <span style="--i:21"></span>
-                <span style="--i:22"></span>
-                <span style="--i:23"></span>
-                <span style="--i:24"></span>
-                <span style="--i:25"></span>
-                <span style="--i:26"></span>
-                <span style="--i:27"></span>
-                <span style="--i:28"></span>
-                <span style="--i:29"></span>
-                <span style="--i:30"></span>
-                <span style="--i:31"></span>
-                <span style="--i:32"></span>
-                <span style="--i:33"></span>
-                <span style="--i:34"></span>
-                <span style="--i:35"></span>
-                <span style="--i:36"></span>
+    <!-- Nav标签全称navigation，顾名思义，是导航的意思。根据HTML5的相关标准定义如下： -->
+    <!-- "A section of a page that links to other pages or to parts within the page: a section with navigation links." -->
+    <header>
+
+        <!-- 左上角个人头像，定义一个叫'soul'的类 -->
+        <div class="soul"><img src="./img/0.jpg" alt=""></div>
+
+        <!-- 个人资料卡 -->
+        <div class="card">
+           
+            <div class="top-section">
+                <i class="message fa fa-envelope"></i>
+                <i class="notif fa fa-bell"></i>
+                <div class="pic">
+                    <img src="./img/0.jpg" alt="">
+                </div>
+                <div class="name">yasuo</div>
+                <div class="tag">@yasuo.com</div>
+                <h5>python web switch </h5>
+                <p>wocao niu b </p>
+            </div>
+
+            
+
+            <!-- 现在我们下面放自己的图标 -->
+            <!-- 先进入这个网站 fontawesome 这样直接引入是没有的 -->
+            <!-- 我们要下这个 然后导入进去 抱歉这里没看到~~ -->
+            <!-- 这样就引入了 然后我们重置一下样式 -->
+
+            <div class="social">
+                
+                    <a href="#"><i class="fa fa-qq" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-weixin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-steam-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
+            </div>
+            
         </div>
+
+        <!-- 头像旁边的站点名称，logo -->
+        <div class="logo">-WDNMD-</div>
+
+        <div class="nav-items">
+            
+            <li><a href="#">主页</a></li>
+            <li><a href="#blog">博客</a></li>
+            <li><a href="./skilltree/index.html">修道院</a></li>
+            <li><a href="#">分类</a></li>
+            <li><a href="./六眼/index.html">技能树</a></li>
+        </div>
+        <!-- 搜索框<form> 标签用于创建供用户输入的 HTML 表单 -->
+        <form action="#">
+            <input type="search" class="search-data " placeholder="search" required>
+            <button type="submit" class="fa fa-search"></button>
+        </form>
+    </header>
+
+    <!-- 粘性导航栏 -->
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header =document.querySelector("header")
+            header.classList.toggle("sticky",window.scrollY > 300);
+        })
     
-        <div class="outer o2">
-            <span style="--i:1"></span>
-            <span style="--i:2"></span>
-            <span style="--i:3"></span>
-            <span style="--i:4"></span>
-            <span style="--i:5"></span>
-            <span style="--i:6"></span>
-            <span style="--i:7"></span>
-            <span style="--i:8"></span>
-            <span style="--i:9"></span>
-            <span style="--i:10"></span>
-            <span style="--i:11"></span>
-            <span style="--i:12"></span>
-            <span style="--i:13"></span>
-            <span style="--i:14"></span>
-            <span style="--i:15"></span>
-            <span style="--i:16"></span>
-            <span style="--i:17"></span>
-            <span style="--i:18"></span>
-            <span style="--i:19"></span>
-            <span style="--i:20"></span>
-            <span style="--i:21"></span>
-            <span style="--i:22"></span>
-            <span style="--i:23"></span>
-            <span style="--i:24"></span>
-            <span style="--i:25"></span>
-            <span style="--i:26"></span>
-            <span style="--i:27"></span>
-            <span style="--i:28"></span>
-            <span style="--i:29"></span>
-            <span style="--i:30"></span>
-            <span style="--i:31"></span>
-            <span style="--i:32"></span>
-            <span style="--i:33"></span>
-            <span style="--i:34"></span>
-            <span style="--i:35"></span>
-            <span style="--i:36"></span>
+    </script>
+
+
+    <!-- 背景画面 -->
+    <div class="screen">
+        <video src="./img/video-op-yasuo.mpeg" autoplay muted loop></video>
+    </div>
+
+    <!-- 下拉箭头 -->
+    <div>
+        <a href="javascript:;" id="back" title="向下查看更多"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
+
+    <!-- 博客主界面 -->
+    <div class="main">
+        <div class="me">
+            <div class="face">
+                <img src="./img/0.jpg" alt="">
+            </div>
+            <h3>yasuo</h3>
+            <p>死亡如风，常伴吾身</p>
         </div>
-
-        <div class="outer o3">
-            <span style="--i:1"></span>
-            <span style="--i:2"></span>
-            <span style="--i:3"></span>
-            <span style="--i:4"></span>
-            <span style="--i:5"></span>
-            <span style="--i:6"></span>
-            <span style="--i:7"></span>
-            <span style="--i:8"></span>
-            <span style="--i:9"></span>
-            <span style="--i:10"></span>
-            <span style="--i:11"></span>
-            <span style="--i:12"></span>
-            <span style="--i:13"></span>
-            <span style="--i:14"></span>
-            <span style="--i:15"></span>
-            <span style="--i:16"></span>
-            <span style="--i:17"></span>
-            <span style="--i:18"></span>
-            <span style="--i:19"></span>
-            <span style="--i:20"></span>
-            <span style="--i:21"></span>
-            <span style="--i:22"></span>
-            <span style="--i:23"></span>
-            <span style="--i:24"></span>
-            <span style="--i:25"></span>
-            <span style="--i:26"></span>
-            <span style="--i:27"></span>
-            <span style="--i:28"></span>
-            <span style="--i:29"></span>
-            <span style="--i:30"></span>
-            <span style="--i:31"></span>
-            <span style="--i:32"></span>
-            <span style="--i:33"></span>
-            <span style="--i:34"></span>
-            <span style="--i:35"></span>
-            <span style="--i:36"></span>
-        </div>
-
-        <div class="outer o4">
-            <span style="--i:1"></span>
-            <span style="--i:2"></span>
-            <span style="--i:3"></span>
-            <span style="--i:4"></span>
-            <span style="--i:5"></span>
-            <span style="--i:6"></span>
-            <span style="--i:7"></span>
-            <span style="--i:8"></span>
-            <span style="--i:9"></span>
-            <span style="--i:10"></span>
-            <span style="--i:11"></span>
-            <span style="--i:12"></span>
-            <span style="--i:13"></span>
-            <span style="--i:14"></span>
-            <span style="--i:15"></span>
-            <span style="--i:16"></span>
-            <span style="--i:17"></span>
-            <span style="--i:18"></span>
-            <span style="--i:19"></span>
-            <span style="--i:20"></span>
-            <span style="--i:21"></span>
-            <span style="--i:22"></span>
-            <span style="--i:23"></span>
-            <span style="--i:24"></span>
-            <span style="--i:25"></span>
-            <span style="--i:26"></span>
-            <span style="--i:27"></span>
-            <span style="--i:28"></span>
-            <span style="--i:29"></span>
-            <span style="--i:30"></span>
-            <span style="--i:31"></span>
-            <span style="--i:32"></span>
-            <span style="--i:33"></span>
-            <span style="--i:34"></span>
-            <span style="--i:35"></span>
-            <span style="--i:36"></span>
-        </div>
-
-        <div class="outer o5">
-            <input type="radio" id="c1" style="--k:1" name="control"> 
-            <input type="radio" id="c2" style="--k:2" name="control"> 
-            <input type="radio" id="c3" style="--k:3" name="control"> 
-            <input type="radio" id="c4" style="--k:4" name="control"> 
-            <input type="radio" id="c5" style="--k:5" name="control"> 
-            <input type="radio" id="c6" style="--k:6" name="control"> 
-            <input type="radio" id="c7" style="--k:7" name="control"> 
-            <input type="radio" id="c8" style="--k:8" name="control"> 
-            <input type="radio" id="c9" style="--k:9" name="control"> 
-            <input type="radio" id="c10" style="--k:10" name="control"> 
-            <input type="radio" id="c11" style="--k:11" name="control"> 
-            <input type="radio" id="c12" style="--k:12" name="control"> 
-            <input type="radio" id="c13" style="--k:13" name="control"> 
-            <input type="radio" id="c14" style="--k:14" name="control"> 
-            <input type="radio" id="c15" style="--k:15" name="control"> 
-            <input type="radio" id="c16" style="--k:16" name="control"> 
-            <input type="radio" id="c17" style="--k:17" name="control"> 
-            <input type="radio" id="c18" style="--k:18" name="control"> 
-            <input type="radio" id="c19" style="--k:19" name="control"> 
-            <input type="radio" id="c20" style="--k:20" name="control"> 
-            <input type="radio" id="c21" style="--k:21" name="control"> 
-            <input type="radio" id="c22" style="--k:22" name="control"> 
-            <input type="radio" id="c23" style="--k:23" name="control"> 
-            <input type="radio" id="c24" style="--k:24" name="control"> 
-            <input type="radio" id="c25" style="--k:25" name="control"> 
-            <input type="radio" id="c26" style="--k:26" name="control"> 
-            <input type="radio" id="c27" style="--k:27" name="control"> 
-            <input type="radio" id="c28" style="--k:28" name="control"> 
-            <input type="radio" id="c29" style="--k:29" name="control"> 
-            <input type="radio" id="c30" style="--k:30" name="control"> 
-            <input type="radio" id="c31" style="--k:31" name="control"> 
-            <input type="radio" id="c32" style="--k:32" name="control"> 
-            <input type="radio" id="c33" style="--k:33" name="control"> 
-            <input type="radio" id="c34" style="--k:34" name="control"> 
-            <input type="radio" id="c35" style="--k:35" name="control"> 
-            <input type="radio" id="c36" style="--k:36" name="control"> 
-
-            <!-- <div class="oo5"  style="--j:1">
-                <label for="c1">--PYTHON--</label>
-                <div class="line"></div>
-                <div class="tip"></div>
-            </div>
-            <div class="oo5" style="--j:2">
-                <label for="c2">--HTML--</label>
-                <div class="line"></div>
-                <div class="tip"></div>
-            </div>
-            <div class="oo5" style="--j:3">
-                <label for="c3">-CSS-</label>
-                <div class="line"></div>
-                <div class="tip"></div>
-            </div> -->
-
-            <!-- .oo5[style="--j:$"]*36>.line+.tip+label[for="c$"] -->
-            <div class="oo5" style="--j:1">
-                <div class="line"></div>
-                <div class="tip"></div>
-                        <label class="major" for="c1">-PYTHON-</label>
-
-
-                        <label class="list" style="--L:1">--基础知识--</label>
-                        <label class="list" style="--L:2">--疑难杂症--</label>
-                        <label class="list" style="--L:3">--笔记--</label>
-                        <label class="list" style="--L:4">--我的项目--</label>
-                        <label class="list" style="--L:5">--常用库/框架--</label>
-
-
-            </div>
-            <div class="oo5" style="--j:2">
-                <div class="line"></div>
-                <div class="tip"></div>
-                                <label class="major" for="c2">--HTML--</label>
-            </div>
-            <div class="oo5" style="--j:3">
-                <div class="line"></div>
-                <div class="tip"></div>
-                                <label class="major" for="c3">--CSS--</label>
-            </div>
-            <div class="oo5" style="--j:4">
-                <div class="line"></div>
-                <div class="tip"></div>
-                                    <label class="major" for="c4">--JAVA--</label>
-            </div>
-            <div class="oo5" style="--j:5">
-                <div class="line"></div>
-                <div class="tip"></div>
-                                    <label class="major" for="c5">-- C --</label>
-            </div>
-            <div class="oo5" style="--j:6">
-                <div class="line"></div>
-                <div class="tip"></div>
-                                            <label for="c6">--L I F E--</label>
-            </div>
-            <div class="oo5" style="--j:7">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c7"></label>
-            </div>
-            <div class="oo5" style="--j:8">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c8"></label>
-            </div>
-            <div class="oo5" style="--j:9">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c9"></label>
-            </div>
-            <div class="oo5" style="--j:10">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c10"></label>
-            </div>
-            <div class="oo5" style="--j:11">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c11"></label>
-            </div>
-            <div class="oo5" style="--j:12">
-                <div class="line"></div>
-                <div class="tip"></div>
-                                                    <label for="c12">--PROGRAME--</label>
-            </div>
-            <div class="oo5" style="--j:13">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c13"></label>
-            </div>
-            <div class="oo5" style="--j:14">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c14"></label>
-            </div>
-            <div class="oo5" style="--j:15">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c15"></label>
-            </div>
-            <div class="oo5" style="--j:16">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c16"></label>
-            </div>
-            <div class="oo5" style="--j:17">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c17"></label>
-            </div>
-            <div class="oo5" style="--j:18">
-                <div class="line"></div>
-                <div class="tip"></div>
-                                                            <label for="c18">--GAME--</label>
-            </div>
-            <div class="oo5" style="--j:19">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c19"></label>
-            </div>
-            <div class="oo5" style="--j:20">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c20"></label>
-            </div>
-            <div class="oo5" style="--j:21">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c21"></label>
-            </div>
-            <div class="oo5" style="--j:22">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c22"></label>
-            </div>
-            <div class="oo5" style="--j:23">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c23"></label>
-            </div>
-            <div class="oo5" style="--j:24">
-                <div class="line"></div>
-                <div class="tip"></div>
-                                                                <label for="c24">-=OTHER=-</label>
-            </div>
-            <div class="oo5" style="--j:25">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c25"></label>
-            </div>
-            <div class="oo5" style="--j:26">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c26"></label>
-            </div>
-            <div class="oo5" style="--j:27">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c27"></label>
-            </div>
-            <div class="oo5" style="--j:28">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c28"></label>
-            </div>
-            <div class="oo5" style="--j:29">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c29"></label>
-            </div>
-            <div class="oo5" style="--j:30">
-                <div class="line"></div>
-                <div class="tip"></div>
-                                                                                    <label for="c30">--??????????--</label>
-            </div>
-            <div class="oo5" style="--j:31">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c31"></label>
-            </div>
-            <div class="oo5" style="--j:32">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c32"></label>
-            </div>
-            <div class="oo5" style="--j:33">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c33"></label>
-            </div>
-            <div class="oo5" style="--j:34">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c34"></label>
-            </div>
-            <div class="oo5" style="--j:35">
-                <div class="line"></div>
-                <div class="tip"></div>
-                <label for="c35"></label>
-            </div>
-            <div class="oo5" style="--j:36">
-                <div class="line"></div>
-                <div class="tip"></div>
-                                                                                        <label for="c36">编 程</label>
-            </div>
-
+        <div class="blog">
+            <h1>我的博客</h1>
+            <h2>WDNMD</h2>
+            <code>#111111111</code>
+            <dialog>123</dialog>
+            <address>3333</address>
 
         </div>
-
-    </div>  
-
-
-
-    
+    </div>    
 </body>
 </html>
-
-
-

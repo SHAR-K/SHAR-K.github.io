@@ -1,0 +1,200 @@
+/* @import url('https//fonts.googleapis.com/css?family=Montserrat');
+ */*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+/*     font-family:'Montserrat',sans-serif;
+ */    
+}
+body{
+    background: #f2f2f2;
+}
+
+/* header .logo{
+    color: #414A8D;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 0 0 0 60px;
+
+    
+} */
+header .logo{
+    transition: .5s;
+    color: #414A8D;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 0 0 0 10px;
+
+    
+}
+header{
+
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    z-index: 1000000;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s;
+    transform: scale(0);
+
+    
+
+}
+header
+{
+    transition: 1s;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0px 50px;
+
+    
+
+}
+header.sticky .soul img
+{
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+}
+header .nav-items li a {
+    color: #414A8D;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .5s;
+    
+}
+header .nav-items li {
+    padding: 0 15px;
+    line-height: no;
+}
+header .nav-items{
+    display: flex;
+    list-style: none;
+    flex: 1;
+    padding: 0 0 0 60px;
+}
+
+header .nav-items li a:before{
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #414A8D;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .5s;
+}
+
+
+
+
+
+header .nav-items li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+
+
+}
+
+header .nav-items li a:after{
+    content: '';
+    position: absolute;
+    bottom:  -3px;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: #414A8D;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .5s;
+}
+
+
+
+
+
+header .nav-items li a:hover:after{
+    transform: scaleX(1);
+    transform-origin: right;
+
+
+}
+header .nav-items li a:hover{
+    color:#A54593;
+    font-weight: 900;
+    font-size: 30px;
+    transform: scaleX(1);
+    
+
+}
+header form{
+    display: flex;
+    height: 40px;
+  /*   background-color: black; */
+    min-width: 18%!important;
+    border: 1px solid rgba(155, 155, 155, 0.2);
+}
+header form .search-data{
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    color: #fff ;
+    font-weight: 500;
+    background: none;
+    border: none;
+    font-size: 17px;
+}
+header form button{
+    padding:  0 15px;
+    background: #A54593;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: #fff;
+    border-radius :2px;
+}
+header .soul img{
+    /* 设置图片的大小 */
+    /* margin: 10px 0px 10px 0px; */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    transition: .5s;
+    cursor: pointer;
+}
+header .soul img:hover
+{
+
+    
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 0 2px #880973c5,
+                0 0 0 2px #7a0867c5;
+}
+header .soul:hover~.card
+{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0%) translateY(60%);
+}
+/* header .soul:hover~.logo
+{
+    font-size: 80px;
+    
+} */

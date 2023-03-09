@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 以上内容为HTML自动生成 -->
+
+    
+
+
+
+
+    <!-- 连接css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="topstyle.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="11.css">
+
+    <!-- 连接图标库 -->
+    <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+    <!-- 调用js，jQuery -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="..\js.js"></script>
+
+    <!-- 网页头顶标签的标题 -->
+    <title>个人博客</title>
+</head>
+
+
+<body>
+    <!-- Nav标签全称navigation，顾名思义，是导航的意思。根据HTML5的相关标准定义如下： -->
+    <!-- "A section of a page that links to other pages or to parts within the page: a section with navigation links." -->
+    <header>
+
+        <!-- 左上角个人头像，定义一个叫'soul'的类 -->
+        <div class="soul"><img src="../img/0.jpg" alt=""></div>
+
+        <!-- 个人资料卡 -->
+        <div class="card">
+           
+            <div class="top-section">
+                <i class="message fa fa-envelope"></i>
+                <i class="notif fa fa-bell"></i>
+                <div class="pic">
+                    <img src="../img/0.jpg" alt="">
+                </div>
+                <div class="name">yasuo</div>
+                <div class="tag">@yasuo.com</div>
+                <h5>python web switch </h5>
+                <p>wocao niu b </p>
+            </div>
+
+            
+
+            <!-- 现在我们下面放自己的图标 -->
+            <!-- 先进入这个网站 fontawesome 这样直接引入是没有的 -->
+            <!-- 我们要下这个 然后导入进去 抱歉这里没看到~~ -->
+            <!-- 这样就引入了 然后我们重置一下样式 -->
+
+            <div class="social">
+                
+                    <a href="#"><i class="fa fa-qq" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-weixin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-steam-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
+            </div>
+            
+        </div>
+
+        <!-- 头像旁边的站点名称，logo -->
+        <div class="logo">-WDNMD-</div>
+
+        <div class="nav-items">
+            
+            <li><a href="..\index.html">主页</a></li>
+            <li><a href="#blog">博客</a></li>
+            <li><a href="./skilltree/index.html">修道院</a></li>
+            <li><a href="#">分类</a></li>
+            <li><a href="#">时间轴</a></li>
+        </div>
+        <!-- 搜索框<form> 标签用于创建供用户输入的 HTML 表单 -->
+        <form action="#">
+            <input type="search" class="search-data " placeholder="search" required>
+            <button type="submit" class="fa fa-search"></button>
+        </form>
+    </header>
+
+
+    <!-- 粘性导航栏 -->
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header =document.querySelector("header")
+            header.classList.toggle("sticky",window.scrollY > 300);
+        })
+    
+    </script>
+    <canvas id="canvas"></canvas>
+
+    <script src='js/jreejo.js'></script>
+    <script  src="js/index.js"></script>
+
+    <!-- 背景画面 -->
+    <div class="screen">
+        <img src="https://game.gtimg.cn/images/lol/universe/v1/assets/images/ionia-the-great-monasteries.jpg" autoplay muted loop></img>
+    </div>
+    
+
+    <!-- 黑洞整体 -->
+    <div class="black-section">
+
+        <!-- 黑洞开关 radio选项 c6开 c7关 -->
+        <input type="radio" id="c6" name="control-b" >
+        <input type="radio" id="c7" name="control-b" >
+        <input type="checkbox" id="c8">
+
+        <!-- 黑洞 -->
+        <div class="black">
+
+            <!-- 退出层 -->
+            <label for="c7" class="close"></label>
+
+            <!-- 打开层 -->
+            <label for="c8" class="blackhole"></label>
+
+
+            <!-- 分类标签页 -->
+            <div class="object-section">
+
+                <!-- 分类选项1-5 -->
+                <input type="radio" id="c1" name="control" >
+                <input type="radio" id="c2" name="control" >
+                <input type="radio" id="c3" name="control" checked>
+                <input type="radio" id="c4" name="control" >
+                <input type="radio" id="c5" name="control" >
+        
+
+                <!-- 每个object对应一个分类 -->
+                <div class="object">
+                    <label for="c1"></label>
+                    <img src="https://game.gtimg.cn/images/lol/universe/v1/assets/images/ionia-the-first-lands.jpg" alt="" class="object-pic" >
+                    
+                    <div class="object-info">
+                        <h1> Program </h1>
+        
+                    </div>
+                </div>
+        
+                <div class="object">
+                    <label for="c2"></label>
+                    <img src="https://game.gtimg.cn/images/lol/universe/v1/assets/images/ionia-life-as-one.jpg" alt="" class="object-pic">
+                    <div class="object-info">
+                        <h1> Dance </h1>
+        
+                    </div>
+                </div>
+        
+                <div class="object">
+                    <label for="c3"></label>
+                    <img src="https://game.gtimg.cn/images/lol/universe/v1/assets/images/ionia-an-ancient-and-respected-history.jpg" alt="" class="object-pic">
+                    <div class="object-info">
+                        <h1> Game </h1>
+        
+                    </div>
+                </div>
+        
+                <div class="object">
+                    <label for="c4"></label>
+                    <img src="https://game.gtimg.cn/images/lol/universe/v1/assets/images/ionia-the-placidium-of-navori.jpg" alt="" class="object-pic">
+                    <div class="object-info">
+                        <h1> Other </h1>
+        
+                    </div>
+                </div>
+        
+                <div class="object">
+                    <label for="c5"></label>
+                    <img src="https://game.gtimg.cn/images/lol/universe/v1/assets/images/ionia_people_05.jpg" alt="" class="object-pic">
+                    <div class="object-info">
+                        <h1> ？？？ </h1>
+        
+                    </div>
+                </div>
+        
+            </div>
+        
+
+            
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 下拉箭头 -->
+    <!-- <div>
+        <a href="javascript:;" id="back" title="向下查看更多"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div> -->
+
+    
+</body>
+</html>
